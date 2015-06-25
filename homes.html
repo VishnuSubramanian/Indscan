@@ -3,20 +3,31 @@
 <head>
 	<title>Indscan</title>
 	<link rel="stylesheet" type="text/css" href="ind.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  	<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
 </head>
 <body>
 	<img src="logo.png">
 	<div class="back">
+			<nav class="navi">
+					<a href="#top"></a>
+					<a href="#About">About</a>
+					<a href="#clients">Client</a>
+					<a href="#team">Team</a>	
+					<a href="#bottom">Contact Us</a>
+			</nav>
+		
 		<div class="class">
+				<a name="top"></a>	
 			<header><center>We Believe Every (Single)data revolving around the Earth Matters !!!</center>
-
-
-
+				
 			</header>
 		</div>
 		<section class="name">
+			<a name="About"></a>
 			<h1>Who we are </h1>
 			<p><center>
+					
  
 				We are a Data driven Startup passionately working towards  Data handling.We solely Worked on Data..(Mother promise)
 				Now our Startup stepped to a Giant leap in deploying a Product.
@@ -26,10 +37,11 @@
  			</p>
 		</section>
 		<section class="name">
+			<a name="clients"></a>
 			<h1>Our Clients</h1>
 			<p> <center>
 						 
- 
+ 					
 				We Got a good amount of Statisfied clients. 
  
 				They show the real passion within us .</center>
@@ -37,6 +49,7 @@
 			</p>
 		</section>
 		<section class="name">
+				<a name="team"></a>
 			<h1>Team</h1>
 			<p><center>
 					
@@ -49,6 +62,7 @@
 		<section class="name">
 		<h1>Contact Us</h1>
 			<p><center>
+					<a name="bottom"></a>
 						
  
 					We are there for you anytime ! (Just make a Call !!)<br>
@@ -64,11 +78,21 @@
 				</center>
 			</p>		
 		</section>
+		<script type="text/javascript">
+				$(function(){
+  				$(".nav a").click(function(e){
+    			e.preventDefault();
+    			$('html,body').scrollTo(this.hash,this.hash); 
+ 					 });
+				});
+		</script>
 		
 </body>
 <footer>
 	
 		<strong>Copywrited @ Indscan </strong>
+		
+			
 	</div>
 </footer>
 </html>

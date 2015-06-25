@@ -68,3 +68,25 @@ img
 	float: right;
 	display: block;
 }
+.navi
+{
+	float: right;
+	margin-top: 30px;
+	margin-right: 10px;
+	font-size: 22px;
+	font-family: courier;
+	text-decoration: none;
+	color: #cecfd5
+	
+	/*border: 1px solid white;*/
+}
+.navi,a:hover
+{
+	color:red;
+}
+.name,a
+{
+	margin-top: 700px;
+	text-align: center;
+	/*padding-top: 100px;*/
+}
